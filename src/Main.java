@@ -1,14 +1,34 @@
-import java.nio.file.Path;
+import com.company.vehicles.Car;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         Phone phone = new Phone("0230123","dsad",213);
-        phone.receiveCall("Tariel");
-        phone.sendMessage("123","123","3");
+//        phone.receiveCall("Tariel");
+//        phone.sendMessage("123","123","3");
+//        Solver();
+        Car car = new Car("Toyota", 2.5);
+        car.info();
+        car.start();
+        car.turnLeft();
+        car.turnRight();
+        car.stop();
+
+
     }
+    static public void Solver() {
+        Sweets candy = new Sweets(100, "candy", 0.8);
+        Sweets chocolate = new Sweets(200, "chocolate", 0.7);
+        Sweets cookie = new Sweets(400, "cookie", 0.6);
+        String result = "";
+        result += "{" + candy.getName() + ", " + candy.getSugar() + ", " + candy.getWeight() + "},";
+        result += "{" + chocolate.getName() + ", " + chocolate.getSugar() + ", " + chocolate.getWeight() + "},";
+        result += "{" + cookie.getName() + ", " + cookie.getSugar() + ", " + cookie.getWeight() + "}.";
+        System.out.println(result);
+
+    }
+
 }
 //Task number 1
  class Phone{
@@ -19,6 +39,7 @@ public class Main {
          this.number = number;
          this.model = model;
          this.weight = weight;
+
      }
 
      public String getNumber() {
@@ -52,20 +73,46 @@ public class Main {
             }
         }
         System.out.println("Вам звонили: "+called.trim());
-
-
     }
-
-
 
 }
 
 class Sweets{
-    private int weight = 100;
-    private String[] shapes = 
+    private int weight;
+    private String name;
+    private double sugar;
 
+    public int getWeight() {
+        return weight;
+    }
 
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getSugar() {
+        return sugar;
+    }
+
+    public void setSugar(double sugar) {
+        this.sugar = sugar;
+    }
+
+    public Sweets(int weight, String name, double sugar) {
+        this.weight = weight;
+        this.name = name;
+        this.sugar = sugar;
+    }
 }
-class Candys extends Sweets{
 
-}
+
+
+
