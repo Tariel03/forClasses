@@ -8,8 +8,8 @@ public class Main {
         Phone phone = new Phone("0230123","dsad",213);
 //        phone.receiveCall("Tariel");
 //        phone.sendMessage("123","123","3");
-//        Solver();
-            FlowerSolver();
+        Solver();
+//        FlowerSolver();
 //        Car car = new Car("Toyota", 2.5);
 //        car.info();
 //        car.start();
