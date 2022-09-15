@@ -8,8 +8,8 @@ public class Main {
         Phone phone = new Phone("0230123","dsad",213);
 //        phone.receiveCall("Tariel");
 //        phone.sendMessage("123","123","3");
-        Solver();
-//        FlowerSolver();
+//        Solver();
+            FlowerSolver();
 //        Car car = new Car("Toyota", 2.5);
 //        car.info();
 //        car.start();
@@ -119,7 +119,7 @@ public class Main {
     // 7 продолжение,метод для нахождения диапозона
     static void FlowerDiapason(String[][]a){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите начало диапазона,(процент содержания свежести цветов не выше 1.0)");
+        System.out.println("Введите начало диапазона,(длина стебля цветов)");
         int beginning = sc.nextInt();
         System.out.println("Введите конец диапазона");
         ArrayList<String> numbers = new ArrayList<>();
