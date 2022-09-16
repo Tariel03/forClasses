@@ -1,6 +1,6 @@
 
 public class second {
-// 7th Task
+// 5 Task
     public static void main(String[] args) {
         Student st = new Student();
         Student[] stud = new Student[5];
